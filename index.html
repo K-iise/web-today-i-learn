@@ -8,7 +8,7 @@
     <!-- <meta property="og:title" content="페이지 제목" /> -->
     <!-- <meta property="og:description" content="페이지 설명" /> -->
     <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
-
+    <meta property="og:title" content=""/>
     <title>Today I Learn</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.js" defer></script>
@@ -29,12 +29,11 @@
     <section class="hero" id="about">
       <div class="profile-card">
         <div class="profile-image">
-          <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
+          <img src="./images/tori.png" alt="프로필 사진">
         </div>
         <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
+          <h1>토리(김윤기)</h1>
+          <p class="tagline">No pain No gain</p>
         </div>
       </div>
     </section>
@@ -43,8 +42,10 @@
       <!-- 자기소개 -->
       <section class="content-section">
         <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
-        <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
+        <p>안녕하세요 우아한테크코스 BE 8기 토리입니다. <br> 매일 성장하는 개발자가 되고 싶습니다.</p>
+        <div class="social-links">
+          <a href="https://github.com/K-iise" target="_blank">GitHub 바로가기</a>
+        </div>
       </section>
 
       <!-- 기본 정보 -->
@@ -54,19 +55,19 @@
         <table class="info-table">
           <tr>
             <th>이름</th>
-            <td></td>
+            <td>김윤기</td>
           </tr>
           <tr>
             <th>MBTI</th>
-            <td></td>
+            <td>ISFP</td>
           </tr>
           <tr>
             <th>취미</th>
-            <td></td>
+            <td>농구, 축구 보기</td>
           </tr>
           <tr>
             <th>좋아하는 음식</th>
-            <td></td>
+            <td>라멘, 치킨</td>
           </tr>
         </table>
       </section>
@@ -74,30 +75,54 @@
       <!-- 나만의 갤러리 -->
       <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
+        <p class="section-desc">나의 감성을 채워준 9가지 앨범</p>
         <div class="gallery-grid">
-          <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
+          <img src="./images/album-kflip.jpg" alt="K-FLIP">
+          <img src="./images/album-independence.jpg" alt="독립음악">
+          <img src="./images/album-keung.jpg" alt="킁">
+          <img src="./images/album-strobo.jpg" alt="strobo">
+          <img src="./images/album-replica.jpg" alt="replica">
+          <img src="./images/album-spyair.jpg" alt="Rockin' The World">
+          <img src="./images/album-green.jpg" alt="녹색이념">
+          <img src="./images/album-alive4.jpg" alt="살아숨셔4">
+          <img src="./images/album-2426.jpg" alt="24:26">
         </div>
       </section>
 
-      <!-- 나를 울린 인생 작품 -->
       <section class="content-section" id="works">
-        <h2>나를 울린 인생 작품</h2>
+        <h2>나의 인생 작품</h2>
         <div class="works-list">
-          <!-- TODO: 최소 2가지 작품을 소개하세요 -->
-          <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
           <article class="work-card">
-            <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
-            </div>
             <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
+              <h3>만화: 드래곤볼 (Dragon Ball)</h3>
+              <p>
+                단순한 만화를 넘어 노력과 한계를 돌파하는 모습을 보여준 인생 작품입니다.
+                특히 천재적인 재능에 안주하지 않고, 라이벌을 보며 끊임없이 자신을 채찍질하며
+                성장하는 <strong>베지터</strong>의 모습에서 큰 영감을 얻습니다.
+                타인과의 비교를 성장의 동력으로 삼는 그의 태도는 제가 지향하는 개발자의 모습이기도 합니다.
+              </p>
+              <img src="images/no_1.jpeg" alt="너가 넘버원이다">
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-info">
+              <h3>다큐멘터리: 마이클 조던: 더 라스트 댄스</h3>
+              <p>
+                승리를 향한 조던의 압도적인 집념과 팀원들을 이끄는 리더십에 큰 전율을 느꼈습니다.
+                최고의 자리에 있어도 멈추지 않는 그 열정을 닮고 싶습니다.
+              </p>
+            </div>
+            <div class="video-container">
+              <iframe
+                      width="100%"
+                      height="315"
+                      src="https://www.youtube.com/embed/TV369FwgCNg"
+                      title="The Last Dance | Official Trailer | Netflix"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+              </iframe>
             </div>
           </article>
         </div>
